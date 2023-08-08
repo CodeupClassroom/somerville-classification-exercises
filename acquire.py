@@ -31,7 +31,7 @@ def get_titanic_data():
 
 
 def new_iris_data():
-    sql_query = ("SELECT species_id, species_name, sepal_length, sepal_width, petal_length, petal_width FROM measurements JOIN species USING(species_id)")
+    sql_query = ("SELECT species_id, measurement_id, species_name, sepal_length, sepal_width, petal_length, petal_width FROM measurements JOIN species USING(species_id)")
     # Read in datafr from Codeup db.
     df = pd.read_sql(sql_query, get_connection('iris_db'))
     return df
