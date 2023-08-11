@@ -6,7 +6,7 @@ from adam_acquire import get_titanic
 
 def drop_cols(df):
     
-    return df.drop(columns = ['pclass', 'passenger_id', 'embarked'])
+    return df.drop(columns = ['pclass', 'passenger_id', 'embarked', 'deck'])
 
 
 def train_val_test(df, strat, seed = 42):
