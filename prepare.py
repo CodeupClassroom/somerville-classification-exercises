@@ -13,7 +13,7 @@ def prep_iris(df):
 # ------------------- TITANIC DATA -------------------
 
 def prep_titanic(titanic):
-    titanic = titanic.drop(columns=['class', 'embarked', 'passenger_id', 'deck', 'age'])
+    titanic = titanic.drop(columns=['class', 'embarked', 'passenger_id', 'deck'])
     titanic = titanic.dropna()
     return titanic
 
